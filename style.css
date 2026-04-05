@@ -12,10 +12,10 @@
   --white-40:    rgba(255,255,255,0.4);
   --white-20:    rgba(255,255,255,0.2);
   --white-08:    rgba(255,255,255,0.08);
-  --blue:        #0a84ff;
-  --purple:      #9430ff;
-  --grad:        linear-gradient(135deg, #0a84ff 0%, #9430ff 100%);
-  --grad-text:   linear-gradient(135deg, #4da3ff 0%, #b266ff 100%);
+  --cyan:        #00d4ff;
+  --magenta:     #e040fb;
+  --grad:        linear-gradient(135deg, #00d4ff 0%, #e040fb 100%);
+  --grad-text:   linear-gradient(135deg, #00d4ff 0%, #e040fb 100%);
   --radius:      16px;
   --radius-sm:   10px;
   --transition:  0.22s cubic-bezier(0.4,0,0.2,1);
@@ -57,8 +57,8 @@ body::before {
   filter: blur(120px);
   opacity: 0.12;
 }
-.glow-blue  { background: var(--blue);   top: -200px; left: -100px; }
-.glow-purple { background: var(--purple); bottom: -200px; right: -100px; }
+.glow-blue  { background: var(--cyan);    top: -200px; left: -100px; }
+.glow-purple { background: var(--magenta); bottom: -200px; right: -100px; }
 
 /* ── Layout ───────────────────────────────────────────────────────── */
 .container {
