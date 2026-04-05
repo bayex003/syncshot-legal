@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — SyncShot</title>
+  <meta name="description" content="Get help with SyncShot. FAQs, tips, and direct support.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+  <style>
+    /* FAQ accordion */
+    details {
+      border-bottom: 1px solid var(--border-soft);
+      padding: 0;
+    }
+    details:last-child { border-bottom: none; }
+
+    summary {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--white);
+      padding: 18px 0;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      transition: color var(--transition);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+
+    summary:hover { color: rgba(255,255,255,0.85); }
+
+    .summary-chevron {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--white-08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      flex-shrink: 0;
+      transition: transform var(--transition), background var(--transition);
+    }
+
+    details[open] .summary-chevron {
+      transform: rotate(180deg);
+      background: rgba(10,132,255,0.2);
+    }
+
+    .faq-body {
+      padding-bottom: 18px;
+      padding-right: 36px;
+    }
+
+    .faq-body p {
+      font-size: 14px;
+      color: var(--white-60);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .faq-body p + p { margin-top: 10px; }
+
+    /* Topic pills */
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .topic-pill {
+      background: var(--white-08);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--white-60);
+      cursor: default;
+      transition: background var(--transition), border-color var(--transition), color var(--transition);
+    }
+
+    .topic-pill:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.14);
+      color: var(--white);
+    }
+
+    .topic-pill-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glow glow-blue"></div>
+  <div class="glow glow-purple"></div>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-icon">🎬</div>
+        <span class="nav-wordmark">SyncShot</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="support.html" class="active">Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="container">
+    <div class="page-header">
+      <div class="page-badge"><span></span> Help</div>
+      <h1 class="page-title">Support</h1>
+      <p class="page-meta">Answers to common questions, and a direct line to us.</p>
+    </div>
+
+    <div class="content">
+
+      <!-- FAQ -->
+      <div class="card">
+        <div class="card-section-label">FAQ</div>
+
+        <details>
+          <summary>
+            How does SyncShot record two videos at once?
+            <span class="summary-chevron">▾</span>
+          </summary>
+          <div class="faq-body">
+            <p>SyncShot uses a single camera sensor captured in a tall format (4:3). Because the sensor captures more than a 16:9 frame, we can crop both a 9:16 portrait and a 16:9 landscape from the same sensor data — at the same time, with no quality loss. Both output files share the same optical centre, so they're perfectly aligned.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            Where are my recordings saved?
+            <span class="summary-chevron">▾</span>
+          </summary>
+          <div class="faq-body">
+            <p>Both your portrait and landscape recordings are saved automatically to your iPhone's <strong>Photos library</strong> at the end of every session. SyncShot will ask for Photos access (add only) the first time it saves. You'll find your clips in the "Recents" album.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            What's the difference between the capture modes?
+            <span class="summary-chevron">▾</span>
+          </summary>
+          <div class="faq-body">
+            <p><strong>Both:</strong> Saves a portrait (9:16) file and a landscape (16:9) file — two clips per recording.</p>
+            <p><strong>Portrait only:</strong> Saves only the 9:16 file. Good for Instagram Reels, TikTok.</p>
+            <p><strong>Landscape only:</strong> Saves only the 16:9 file. Good for YouTube, interviews.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            How does the 7-day free trial work?
+            <span class="summary-chevron">▾</span>
+          </summary>
+          <div class="faq-body">
+            <p>Your free trial starts automatically the first time you open SyncShot. You have full, unlimited access to all features for 7 days. After your trial ends, a one-time $5.99 purchase is required to continue recording. There are no subscriptions.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            I already paid — how do I restore my purchase?
+            <span class="summary-chevron">▾</span>
+          </summary>
+          <div class="faq-body">
+            <p>Open SyncShot, tap the gear icon (⚙️) in the top right, scroll to the <strong>About</strong> section, and tap <strong>Restore Purchase</strong>. Make sure you're signed into the same Apple ID used for the original purchase.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            The landscape PiP preview looks laggy — is that normal?
+            <span class="summary-chevron">▾</span>
+          </summary>
+          <div class="faq-body">
+            <p>No. If you're seeing lag on the landscape preview, try force-quitting and relaunching the app. On some devices the display layer needs a fresh session to sync properly. If the issue persists, please contact us.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            Can I record in 4K?
+            <span class="summary-chevron">▾</span>
+          </summary>
+          <div class="faq-body">
+            <p>Yes. SyncShot supports 4K at 24, 30, and 60fps. Go to Settings (⚙️) and set Resolution to <strong>4K</strong>. Note: 4K/60fps files are large — check your available storage before a long shoot.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            My recording stopped unexpectedly — what happened?
+            <span class="summary-chevron">▾</span>
+          </summary>
+          <div class="faq-body">
+            <p>This can happen if a phone call comes in, Siri activates, or the device gets too hot. SyncShot saves whatever was recorded up to that point and shows an alert. Your partial recording will be in your Photos library. If you suspect a bug, please reach out with your device model and iOS version.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            Does SyncShot work on iPad?
+            <span class="summary-chevron">▾</span>
+          </summary>
+          <div class="faq-body">
+            <p>SyncShot is designed and optimised for iPhone (iOS 17.6+). iPad is not officially supported at this time.</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- Topics -->
+      <div class="card">
+        <div class="card-section-label">Topics</div>
+        <div class="topic-grid">
+          <div class="topic-pill"><span class="topic-pill-icon">🎬</span> Recording</div>
+          <div class="topic-pill"><span class="topic-pill-icon">💳</span> Purchase</div>
+          <div class="topic-pill"><span class="topic-pill-icon">📂</span> Files & Storage</div>
+          <div class="topic-pill"><span class="topic-pill-icon">📷</span> Camera Quality</div>
+          <div class="topic-pill"><span class="topic-pill-icon">🔊</span> Audio</div>
+          <div class="topic-pill"><span class="topic-pill-icon">🌡️</span> Device Heat</div>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="card">
+        <div class="card-section-label">Still need help?</div>
+        <h2>Get in Touch</h2>
+        <p>Can't find the answer above? Send us an email and we'll get back to you within 48 hours. Please include your device model (e.g. iPhone 15 Pro) and iOS version — it helps us resolve issues faster.</p>
+        <a href="mailto:tinylifeapps@gmail.com" class="contact-card">
+          <div class="contact-card-icon">✉️</div>
+          <div class="contact-card-text">
+            <strong>tinylifeapps@gmail.com</strong>
+            <span>Response within 48 hours</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-copy">© 2025 Tiny Life Apps. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
